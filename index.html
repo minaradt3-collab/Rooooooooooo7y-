@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Sodo</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🎵 SONG: put your song file next to this file and name it song.mp3 (or change the name below) -->
+<audio id="song" src="ssstik.io_1792623451629.mp3" loop preload="auto"></audio>
+
+<div id="sky" aria-hidden="true"></div>
+
+<!-- Opening screen: the tap is needed so the phone allows the song to play -->
+<div id="intro">
+  <div class="intro-lantern"></div>
+  <h1 class="script">Sodo,</h1>
+  <p>there's something glowing for you</p>
+  <button id="openBtn">Tap to open</button>
+</div>
+
+<main id="main" hidden>
+
+  <section class="hero">
+    <!-- 📷 PHOTO: put her picture next to this file and name it photo.jpg -->
+    <div class="tower">
+      <div class="glow"></div>
+      <div class="frame"><img src="sandy.png.jpg" alt="Sodo" onerror="this.style.display='none'"></div>
+    </div>
+    <h2 class="script name">Sodo</h2>
+    <p class="typed" id="typed"></p>
+  </section>
+
+  <section class="cards">
+    <div class="card reveal"><span class="icon">🏮</span><p>Out of every light in the sky, you're the one I'd follow home.</p></div>
+    <div class="card reveal"><span class="icon">🧸</span><p>You're the warmest hug I never knew I was waiting for.</p></div>
+    <div class="card reveal"><span class="icon">✨</span><p>Rapunzel waited years to see the lights. I just had to meet you.</p></div>
+    <div class="card reveal"><span class="icon">💛</span><p>Whatever tomorrow looks like, I want you in it.</p></div>
+  </section>
+
+  <section class="gallery">
+    <h2 class="script">Our little moments</h2>
+    <p class="gsub">every light has a story</p>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <section class="finale reveal">
+    <h2 class="script">Make a wish, Sodo</h2>
+    <button id="wishBtn">Release the lanterns</button>
+    <p id="wishMsg" class="wish" hidden>I'm so lucky to be yours. 🧸💛</p>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
